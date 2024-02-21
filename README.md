@@ -1,5 +1,5 @@
 Example of kiosk information parsed from the FerryHopper booking response when boarding method is BOARDING_METHOD_PAPER_COUPON or BOARDING_METHOD_PAPER_COUPONS_KIOSK
-
+```
 ---------------------------------------------
 Kiosk URL: https://www.google.com/maps/place/Imbarco+Grimaldi+Lines+per+Cagliari/@40.8415766,14.2603256,17.22z/data=!4m5!3m4!1s0x133b098e2b029ae5:0x5f000b1e2fffbc90!8m2!3d40.8408285!4d14.2607526?hl=it
 Kiosk Title: Porta di Massa
@@ -90,3 +90,4 @@ Spot Address Details: Molo Principale, 80076 Capri
 Spot Phones: +39 081 428 5555
 Spot Notes: 
 ---------------------------------------------
+```

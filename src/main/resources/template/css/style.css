@@ -1,0 +1,677 @@
+.boarding-details-PDF {
+  display: flex;
+  flex-direction: column;
+  width: 595px;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 32px 40px;
+  position: relative;
+  background-color: var(--white-color-white);
+}
+
+.boarding-details-PDF .frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .logo-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 0px 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .logo {
+  position: relative;
+  width: 94.58px;
+  height: 32px;
+}
+
+.boarding-details-PDF .path {
+  position: absolute;
+  width: 6px;
+  height: 20px;
+  top: 6px;
+  left: 64px;
+}
+
+.boarding-details-PDF .shape {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  top: 6px;
+  left: 72px;
+}
+
+.boarding-details-PDF .img {
+  position: absolute;
+  width: 30px;
+  height: 21px;
+  top: 6px;
+  left: 31px;
+}
+
+.boarding-details-PDF .overlap-group {
+  position: absolute;
+  width: 29px;
+  height: 27px;
+  top: 0;
+  left: 0;
+}
+
+.boarding-details-PDF .shape-2 {
+  position: absolute;
+  width: 22px;
+  height: 21px;
+  top: 6px;
+  left: 7px;
+}
+
+.boarding-details-PDF .path-2 {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 0;
+  left: 0;
+}
+
+.boarding-details-PDF .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.boarding-details-PDF .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .frame-3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.boarding-details-PDF .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .from-city {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--heading-5-mobile-font-family);
+  font-weight: var(--heading-5-mobile-font-weight);
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: var(--heading-5-mobile-font-size);
+  letter-spacing: var(--heading-5-mobile-letter-spacing);
+  line-height: var(--heading-5-mobile-line-height);
+  font-style: var(--heading-5-mobile-font-style);
+}
+
+.boarding-details-PDF .from-city-copy {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-400);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .from-city-copy-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.boarding-details-PDF .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .span {
+  font-weight: 700;
+  color: #fa6b6b;
+}
+
+.boarding-details-PDF .text-wrapper-2 {
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  color: #425486;
+}
+
+.boarding-details-PDF .frame-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .from-city-copy-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-400);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .ticket-print-at {
+  position: relative;
+  width: 104.44px;
+  height: 104px;
+}
+
+.boarding-details-PDF .from-city-copy-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-400);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--medium-blue-color-medium-blue-100);
+  border-radius: 8px;
+}
+
+.boarding-details-PDF .from-city-copy-5 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.boarding-details-PDF .frame-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .from-city-copy-6 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--deep-blue-color-deep-blue-300);
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .from-city-copy-7 {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .route-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--gray-color-gray-500);
+}
+
+.boarding-details-PDF .frame-9 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.boarding-details-PDF .text-wrapper-4 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.boarding-details-PDF .SNAV {
+  position: relative;
+  width: 51px;
+  height: 20px;
+}
+
+.boarding-details-PDF .bitmap {
+  position: absolute;
+  width: 50px;
+  height: 12px;
+  top: 4px;
+  left: 0;
+}
+
+.boarding-details-PDF .divider-solid {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-color-gray-500);
+}
+
+.boarding-details-PDF .departure-and {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .journey-components-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.boarding-details-PDF .journey-components {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .time-of-travel {
+  display: flex;
+  flex-direction: column;
+  width: 32px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+}
+
+.boarding-details-PDF .departure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .text-wrapper-5 {
+  align-self: stretch;
+  position: relative;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.boarding-details-PDF .text-wrapper-6 {
+  position: relative;
+  align-self: stretch;
+  height: 40px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-300);
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 12px;
+}
+
+.boarding-details-PDF .arrival {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .text-wrapper-7 {
+  flex: 1;
+  position: relative;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.boarding-details-PDF .frame-10 {
+  display: flex;
+  flex-direction: column;
+  width: 8px;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+  align-self: stretch;
+}
+
+.boarding-details-PDF .img-2 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.boarding-details-PDF .rectangle {
+  position: relative;
+  flex: 1;
+  width: 4px;
+  flex-grow: 1;
+  background-color: var(--gray-color-gray-500);
+  border-radius: 4px;
+}
+
+.boarding-details-PDF .dep-and-arrival {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.boarding-details-PDF .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.boarding-details-PDF .frame-11 {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.boarding-details-PDF .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-300);
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+.boarding-details-PDF .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .ticket-code {
+  display: flex;
+  flex-direction: column;
+  width: 129px;
+  align-items: flex-end;
+  gap: 4px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.boarding-details-PDF .text-wrapper-10 {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--deep-blue-color-deep-blue-300);
+  font-size: 9px;
+  text-align: right;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .text-wrapper-11 {
+  position: relative;
+  align-self: stretch;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 11px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .frame-12 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .manage-your-booking {
+  display: flex;
+  flex-direction: column;
+  width: 511px;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .frame-13 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.boarding-details-PDF .from-city-copy-8 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.boarding-details-PDF .from-city-copy-9 {
+  position: relative;
+  width: 511px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.boarding-details-PDF .text-wrapper-12 {
+  color: #fa6b6b;
+}
+
+.boarding-details-PDF .text-wrapper-13 {
+  color: #425486;
+}
+
+.boarding-details-PDF .www-omio-com-https {
+  position: relative;
+  width: 511px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--deep-blue-color-deep-blue-500);
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 12px;
+}
+
+.boarding-details-PDF .text-wrapper-14 {
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #132968;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 12px;
+}
+
+.boarding-details-PDF .text-wrapper-15 {
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+}

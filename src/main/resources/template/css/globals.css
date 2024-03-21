@@ -1,0 +1,35 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/65ae49e06a87a05006908ead/fonts/gt-walsheim-pro-bold-regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/5b59f26648a66e000bf16621/GT-Walsheim-Pro-Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro-Medium";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c52b702b696f30009ded313/GTWalsheimPro-Medium.ttf")
+    format("truetype");
+}

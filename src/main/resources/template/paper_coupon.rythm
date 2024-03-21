@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <style>
+      @include("template/css/globals.css")
+      @include("template/css/styleguide.css")
+      @include("template/css/style.css")
+    </style>
+  </head>
+  <body>
+    <div class="boarding-details-PDF">
+      <div class="frame">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <img class="path" src="img/path-18.svg" />
+            <img class="shape" src="img/shape-12.svg" />
+            <img class="img" src="img/path-20.svg" />
+            <div class="overlap-group">
+              <img class="shape-2" src="img/shape-13.svg" /> <img class="path-2" src="img/path-19.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="text-wrapper">Boarding details</div>
+      </div>
+      <div class="div">
+        <div class="frame-2">
+          <div class="frame-3">
+            <div class="frame-4">
+              <div class="frame-5">
+                <p class="from-city">Collect your ticket(s) before departure</p>
+                <p class="from-city-copy">
+                  You must check in online, as well as collect a ticket at a {"{"}companyName{"}"} kiosk or desk, before
+                  you travel.
+                </p>
+              </div>
+              <div class="frame-5">
+                <div class="from-city-copy-2">Step 1:</div>
+                <p class="p">
+                  <span class="span">Check in on the {"{"}companyName{"}"} website</span>
+                  <span class="text-wrapper-2"> to receive a check-in confirmation document.</span>
+                </p>
+                <div class="frame-6">
+                  <p class="from-city-copy-3">
+                    It may take 10-15 minutes for the check-in confirmation document to be ready to download.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img class="ticket-print-at" src="img/ticketPrintAtStation.png" />
+          </div>
+          <div class="frame-6">
+            <div class="from-city-copy-2">Step 2:</div>
+            <p class="from-city-copy-4">
+              Show your check-in confirmation document and the details listed below at a {"{"}companyName{"}"} kiosk or
+              desk to receive a valid boarding pass before you travel.
+            </p>
+          </div>
+        </div>
+        <div class="frame-7">
+          <p class="from-city-copy-5">To check in online and to collect your ticket(s) you’ll need:</p>
+          <div class="frame-8">
+            <div class="from-city-copy-6">NAME ASSOCIATED WITH BOOKING</div>
+            <div class="from-city-copy-7">Agata Galecka</div>
+          </div>
+          <div class="frame-8">
+            <div class="from-city-copy-6">RESERVATION NUMBER</div>
+            <div class="from-city-copy-7">xxxxxxxxxxxxxxxxxx</div>
+          </div>
+        </div>
+        <div class="route-block">
+          <div class="frame-9">
+            <div class="text-wrapper-3">Outbound</div>
+            <div class="text-wrapper-4">Fri Mar 22, 2024</div>
+            <div class="SNAV"><img class="bitmap" src="img/bitmap.png" /></div>
+          </div>
+          <div class="divider-solid"></div>
+          <div class="departure-and">
+            <div class="journey-components-wrapper">
+              <div class="journey-components">
+                <div class="time-of-travel">
+                  <div class="departure">
+                    <div class="text-wrapper-5">12:45</div>
+                    <div class="text-wrapper-6">0h:50m</div>
+                  </div>
+                  <div class="arrival"><div class="text-wrapper-7">16:25</div></div>
+                </div>
+                <div class="frame-10">
+                  <img class="img-2" src="img/ferry-1.svg" />
+                  <div class="rectangle"></div>
+                  <img class="img-2" src="img/pin.svg" />
+                </div>
+                <div class="dep-and-arrival">
+                  <div class="text-wrapper-8">Naples Beverello</div>
+                  <div class="frame-11">
+                    <div class="text-wrapper-9">SNAV</div>
+                    <div class="text-wrapper-9">|</div>
+                    <div class="text-wrapper-9">A-01036246451</div>
+                  </div>
+                  <div class="div-wrapper"><div class="text-wrapper-8">Port of Capri</div></div>
+                </div>
+              </div>
+            </div>
+            <div class="ticket-code">
+              <div class="text-wrapper-10">FERRY</div>
+              <div class="text-wrapper-11">A-01036246451</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-12">
+          <div class="manage-your-booking">
+            <div class="frame-13"><div class="from-city-copy-8">Manage your booking</div></div>
+            <p class="from-city-copy-9">
+              <span class="text-wrapper-12">Visit the Omio website or open the Omio app</span>
+              <span class="text-wrapper-13"> for information about cancellation, refunds, and ticket policies.</span>
+            </p>
+          </div>
+          <div class="divider-solid"></div>
+          <p class="www-omio-com-https">
+            <span class="text-wrapper-14">www.omio.com | </span>
+            <span class="text-wrapper-15">https://help.omio.com/</span>
+            <span class="text-wrapper-14">
+              | Telephone: +34 911 82 9991 (Spain), +39 06 9480 4274 (Italy), +33 970 7333 70 (France), +31 85 888 8866
+              (Netherlands), +32 2588 0220 (Belgium), +44 808 164 8588 (toll free within the UK), +49 30 25555
+              3900(Germany), +1 917 924 3330 (USA)</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

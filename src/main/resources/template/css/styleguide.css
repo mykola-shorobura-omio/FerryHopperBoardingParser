@@ -1,0 +1,16 @@
+:root {
+  --white-color-white: rgba(255, 255, 255, 1);
+  --deep-blue-color-deep-blue-500: rgba(19, 41, 104, 1);
+  --deep-blue-color-deep-blue-400: rgba(66, 84, 134, 1);
+  --deep-blue-color-deep-blue-300: rgba(113, 127, 164, 1);
+  --gray-color-gray-500: rgba(220, 223, 233, 1);
+  --medium-blue-color-medium-blue-100: rgba(245, 249, 253, 1);
+  --coral-color-coral-200: rgba(254, 218, 218, 1);
+  --coral-color-coral-500: rgba(250, 107, 107, 1);
+  --heading-5-mobile-font-family: "GT Walsheim Pro", Helvetica;
+  --heading-5-mobile-font-weight: 700;
+  --heading-5-mobile-font-size: 18px;
+  --heading-5-mobile-letter-spacing: 0px;
+  --heading-5-mobile-line-height: 24px;
+  --heading-5-mobile-font-style: normal;
+}

@@ -1,140 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
 .boarding-details-PDF {
-  display: flex;
-  flex-direction: column;
   width: 595px;
-  align-items: flex-start;
-  gap: 40px;
+  height: 842px;
   padding: 32px 40px;
   position: relative;
-  background-color: var(--white-color-white);
+  background-color: #ffffff;
+}
+
+/* Children of .boarding-details-PDF */
+.boarding-details-PDF > * {
+  margin-bottom: 40px; /* Mimicking the gap property */
+}
+
+/* The last child should not have a margin at the bottom */
+.boarding-details-PDF > *:last-child {
+  margin-bottom: 0;
 }
 
 .boarding-details-PDF .frame {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
-}
-
-.boarding-details-PDF .logo-wrapper {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-  padding: 0px 8px;
   position: relative;
-  flex: 0 0 auto;
 }
 
-.boarding-details-PDF .logo {
+/* To simulate 'align-items: flex-start', default block behavior is used, so no additional styles are needed.
+'justify-content: space-between' does not directly translate without flex or grid layout.
+If you need to space elements vertically, you might need to use margins on child elements manually. */
+
+.boarding-details-PDF .div {
+  width: 100%;
   position: relative;
-  width: 94.58px;
-  height: 32px;
 }
 
-.boarding-details-PDF .path {
-  position: absolute;
-  width: 6px;
-  height: 20px;
-  top: 6px;
-  left: 64px;
+/* For .div, to simulate the gap, you would need to manually add margins to the children except the last child. */
+.boarding-details-PDF .div > * {
+  margin-bottom: 40px; /* Mimicking the gap property */
 }
 
-.boarding-details-PDF .shape {
-  position: absolute;
-  width: 22px;
-  height: 21px;
-  top: 6px;
-  left: 72px;
+.boarding-details-PDF .div > *:last-child {
+  margin-bottom: 0; /* Remove margin for the last child */
 }
 
-.boarding-details-PDF .img {
-  position: absolute;
-  width: 30px;
-  height: 21px;
-  top: 6px;
-  left: 31px;
+
+.boarding-details-PDF .frame-2 {
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  min-height: 32px; /* Ensuring there's room for the logo height */
 }
 
-.boarding-details-PDF .overlap-group {
-  position: absolute;
-  width: 29px;
-  height: 27px;
-  top: 0;
-  left: 0;
+.boarding-details-PDF .frame-2:after { /* For spacing between items */
+  content: '';
+  display: inline-block;
+  width: 100%;
 }
 
-.boarding-details-PDF .shape-2 {
-  position: absolute;
-  width: 22px;
-  height: 21px;
-  top: 6px;
-  left: 7px;
-}
+/* Keep the logo, path, shape, img, and overlap-group styles unchanged as they rely on absolute positioning, which is not specific to CSS3 */
 
+.boarding-details-PDF .logo,
+.boarding-details-PDF .path,
+.boarding-details-PDF .shape,
+.boarding-details-PDF .img,
+.boarding-details-PDF .overlap-group,
+.boarding-details-PDF .shape-2,
 .boarding-details-PDF .path-2 {
   position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 0;
-  left: 0;
 }
 
 .boarding-details-PDF .text-wrapper {
-  position: relative;
-  width: fit-content;
+  position: absolute;
+  right: 0;
+  top: 0; /* Adjust based on actual layout needs */
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 14px;
-  letter-spacing: 0;
-  line-height: 24px;
   white-space: nowrap;
 }
 
-.boarding-details-PDF .div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.boarding-details-PDF .frame-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
 .boarding-details-PDF .frame-3 {
-  display: flex;
-  align-items: flex-start;
-  gap: 56px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
+  position: relative;
+}
+
+/* Apply to all direct children of .frame-3 */
+.boarding-details-PDF .frame-3 > * {
+  margin-bottom: 24px; /* This mimics the gap property */
+}
+
+/* To avoid adding extra space after the last child, you can use the :last-child pseudo-class */
+.boarding-details-PDF .frame-3 > *:last-child {
+  margin-bottom: 0;
 }
 
 .boarding-details-PDF .frame-4 {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 56px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
   position: relative;
-  flex: 1;
-  flex-grow: 1;
 }
 
 .boarding-details-PDF .frame-5 {
@@ -143,89 +117,40 @@
   align-items: flex-start;
   gap: 8px;
   position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  flex: 1;
+  flex-grow: 1;
 }
 
 .boarding-details-PDF .from-city {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
-  font-family: var(--heading-5-mobile-font-family);
-  font-weight: var(--heading-5-mobile-font-weight);
-  color: var(--deep-blue-color-deep-blue-500);
-  font-size: var(--heading-5-mobile-font-size);
-  letter-spacing: var(--heading-5-mobile-letter-spacing);
-  line-height: var(--heading-5-mobile-line-height);
-  font-style: var(--heading-5-mobile-font-style);
+  font-family: "GT Walsheim Pro", Helvetica;
+  font-weight: 700;
+  color: #132968;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-style: normal;
 }
 
 .boarding-details-PDF .from-city-copy {
-  position: relative;
-  align-self: stretch;
-  font-family: "GT Walsheim Pro-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-400);
-  font-size: 11px;
-  letter-spacing: 0;
-  line-height: 16px;
-}
-
-.boarding-details-PDF .from-city-copy-2 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "GT Walsheim Pro-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
-.boarding-details-PDF .p {
-  position: relative;
   align-self: stretch;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 400;
-  color: transparent;
+  color: #425486;
   font-size: 11px;
-  letter-spacing: 0;
   line-height: 16px;
+  position: relative;
+  letter-spacing: 0;
 }
 
 .boarding-details-PDF .span {
   font-weight: 700;
-  color: #fa6b6b;
 }
 
 .boarding-details-PDF .text-wrapper-2 {
   font-family: "GT Walsheim Pro-Regular", Helvetica;
-  color: #425486;
-}
-
-.boarding-details-PDF .frame-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.boarding-details-PDF .from-city-copy-3 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "GT Walsheim Pro-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-400);
-  font-size: 11px;
-  letter-spacing: 0;
-  line-height: 16px;
 }
 
 .boarding-details-PDF .ticket-print-at {
@@ -234,74 +159,151 @@
   height: 104px;
 }
 
-.boarding-details-PDF .from-city-copy-4 {
-  position: relative;
-  align-self: stretch;
-  font-family: "GT Walsheim Pro-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-400);
-  font-size: 11px;
-  letter-spacing: 0;
-  line-height: 16px;
-}
-
-.boarding-details-PDF .frame-7 {
-  display: flex;
+.boarding-details-PDF .frame-6 {
   flex-direction: column;
+  width: 515px;
   align-items: flex-start;
   gap: 16px;
   padding: 16px 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
   flex: 0 0 auto;
-  background-color: var(--medium-blue-color-medium-blue-100);
+  background-color: #f5f9fd;
   border-radius: 8px;
+  display: flex;
+  position: relative;
 }
 
-.boarding-details-PDF .from-city-copy-5 {
-  position: relative;
+.boarding-details-PDF .from-city-copy-2 {
   align-self: stretch;
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 14px;
+  line-height: 24px;
+  position: relative;
   letter-spacing: 0;
-  line-height: 20px;
 }
 
-.boarding-details-PDF .frame-8 {
-  display: flex;
+.boarding-details-PDF .frame-7 {
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  display: flex;
+  position: relative;
 }
 
-.boarding-details-PDF .from-city-copy-6 {
+.boarding-details-PDF .from-city-copy-3 {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Medium", Helvetica;
   font-weight: 500;
-  color: var(--deep-blue-color-deep-blue-300);
+  color: #717fa4;
   font-size: 9px;
   letter-spacing: 1.2px;
   line-height: 16px;
 }
 
-.boarding-details-PDF .from-city-copy-7 {
-  position: relative;
+.boarding-details-PDF .from-city-copy-4 {
   align-self: stretch;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 11px;
-  letter-spacing: 0;
   line-height: 16px;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.boarding-details-PDF .frame-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.boarding-details-PDF .frame-8 {
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.boarding-details-PDF .frame-9 {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.boarding-details-PDF .from-city-copy-wrapper {
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.boarding-details-PDF .from-city-copy-5 {
+  flex: 1;
+  margin-top: -1px;
+  font-family: "GT Walsheim Pro-Bold", Helvetica;
+  font-weight: 700;
+  color: #132968;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.boarding-details-PDF .p {
+  width: 199.5px;
+  height: 32px;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #425486;
+  font-size: 11px;
+  line-height: 16px;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.boarding-details-PDF .from-city-copy-6 {
+  width: fit-content;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #425486;
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0;
+}
+
+.boarding-details-PDF .from-city-copy-7 {
+  width: fit-content;
+  font-family: "GT Walsheim Pro-Regular", Helvetica;
+  font-weight: 400;
+  color: #fa6b6b;
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0;
 }
 
 .boarding-details-PDF .route-block {
@@ -316,17 +318,17 @@
   flex: 0 0 auto;
   border-radius: 8px;
   border: 1px solid;
-  border-color: var(--gray-color-gray-500);
+  border-color: #dcdfe9;
 }
 
-.boarding-details-PDF .frame-9 {
-  display: flex;
+.boarding-details-PDF .frame-10 {
   align-items: flex-start;
   gap: 8px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+  display: flex;
+  position: relative;
 }
 
 .boarding-details-PDF .text-wrapper-3 {
@@ -335,7 +337,7 @@
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 20px;
@@ -348,7 +350,7 @@
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 20px;
@@ -373,7 +375,7 @@
   align-self: stretch;
   width: 100%;
   height: 1px;
-  background-color: var(--gray-color-gray-500);
+  background-color: #dcdfe9;
 }
 
 .boarding-details-PDF .departure-and {
@@ -384,16 +386,6 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-}
-
-.boarding-details-PDF .journey-components-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
 }
 
 .boarding-details-PDF .journey-components {
@@ -434,7 +426,7 @@
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 11px;
   text-align: center;
   letter-spacing: 0;
@@ -447,7 +439,7 @@
   height: 40px;
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-300);
+  color: #717fa4;
   font-size: 9px;
   text-align: center;
   letter-spacing: 0;
@@ -470,21 +462,21 @@
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 11px;
   text-align: center;
   letter-spacing: 0;
   line-height: 14px;
 }
 
-.boarding-details-PDF .frame-10 {
-  display: flex;
+.boarding-details-PDF .frame-11 {
   flex-direction: column;
   width: 8px;
   align-items: center;
   gap: 2px;
-  position: relative;
   align-self: stretch;
+  display: flex;
+  position: relative;
 }
 
 .boarding-details-PDF .img-2 {
@@ -500,7 +492,7 @@
   flex: 1;
   width: 4px;
   flex-grow: 1;
-  background-color: var(--gray-color-gray-500);
+  background-color: #dcdfe9;
   border-radius: 4px;
 }
 
@@ -521,21 +513,21 @@
   margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 11px;
   letter-spacing: 0;
   line-height: 14px;
   white-space: nowrap;
 }
 
-.boarding-details-PDF .frame-11 {
-  display: flex;
+.boarding-details-PDF .frame-12 {
   height: 40px;
   align-items: center;
   gap: 4px;
-  position: relative;
   align-self: stretch;
   width: 100%;
+  display: flex;
+  position: relative;
 }
 
 .boarding-details-PDF .text-wrapper-9 {
@@ -543,7 +535,7 @@
   width: fit-content;
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-300);
+  color: #717fa4;
   font-size: 9px;
   letter-spacing: 0;
   line-height: 12px;
@@ -573,7 +565,7 @@
   align-self: stretch;
   font-family: "GT Walsheim Pro-Medium", Helvetica;
   font-weight: 500;
-  color: var(--deep-blue-color-deep-blue-300);
+  color: #717fa4;
   font-size: 9px;
   text-align: right;
   letter-spacing: 1.2px;
@@ -585,93 +577,76 @@
   align-self: stretch;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 11px;
   text-align: right;
   letter-spacing: 0;
   line-height: 16px;
 }
 
-.boarding-details-PDF .frame-12 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.boarding-details-PDF .manage-your-booking {
-  display: flex;
-  flex-direction: column;
-  width: 511px;
-  align-items: flex-start;
-  gap: 4px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.boarding-details-PDF .frame-13 {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  align-self: stretch;
+.frame-13 {
   width: 100%;
-  flex: 0 0 auto;
+  margin-top: 20px;
 }
 
-.boarding-details-PDF .from-city-copy-8 {
+.manage-your-booking, .divider-solid, .www-omio-com-https {
+  width: 100%;
   position: relative;
-  flex: 1;
-  margin-top: -1px;
+}
+
+.frame-14, .from-city-copy-8, .from-city-copy-9, .text-wrapper-12, .text-wrapper-13, .text-wrapper-14, .text-wrapper-15 {
+  display: block; /* Ensuring each element behaves as a block-level element */
+}
+
+.divider-solid {
+  height: 1px;
+  background-color: #dcdfe9;
+  margin: 16px 0;
+}
+
+.from-city-copy-8 {
+  margin-top: 0;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
-  color: var(--deep-blue-color-deep-blue-500);
+  color: #132968;
   font-size: 12px;
-  letter-spacing: 0;
   line-height: 18px;
 }
 
-.boarding-details-PDF .from-city-copy-9 {
-  position: relative;
-  width: 511px;
+.from-city-copy-9 {
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
-  color: transparent;
+  color: #000; /* Replaced 'transparent' to make the text visible */
   font-size: 11px;
-  letter-spacing: 0;
   line-height: 16px;
 }
 
-.boarding-details-PDF .text-wrapper-12 {
+.text-wrapper-12, .text-wrapper-13, .text-wrapper-14, .text-wrapper-15 {
+  display: inline; /* Making these span elements display inline */
+}
+
+.text-wrapper-12 {
   color: #fa6b6b;
 }
 
-.boarding-details-PDF .text-wrapper-13 {
+.text-wrapper-13 {
   color: #425486;
 }
 
-.boarding-details-PDF .www-omio-com-https {
-  position: relative;
-  width: 511px;
-  font-family: "GT Walsheim Pro-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--deep-blue-color-deep-blue-500);
-  font-size: 8px;
-  letter-spacing: 0;
-  line-height: 12px;
-}
-
-.boarding-details-PDF .text-wrapper-14 {
+.www-omio-com-https {
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
   color: #132968;
   font-size: 8px;
-  letter-spacing: 0;
   line-height: 12px;
 }
 
-.boarding-details-PDF .text-wrapper-15 {
-  font-family: "GT Walsheim Pro-Bold", Helvetica;
-  font-weight: 700;
+.text-wrapper-14, .text-wrapper-15 {
+  font-weight: 400; /* Adjusted to keep consistency */
+  color: #132968;
+  font-size: 8px;
+}
+
+.text-wrapper-15 {
+  font-weight: 700; /* Keeping the bold style for specific elements */
 }

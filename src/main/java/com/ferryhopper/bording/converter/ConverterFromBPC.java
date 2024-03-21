@@ -91,26 +91,22 @@ public class ConverterFromBPC {
     }
 
     public void convertToPdf(String htmlContent, OutputStream outputStream)
-        throws IOException, com.itextpdf.text.DocumentException {
-        try {
-            ITextRenderer renderer = new ITextRenderer();
-            SharedContext sharedContext = renderer.getSharedContext();
-            sharedContext.setMedia("pdf");
-            sharedContext.setUserAgentCallback(
-                new UriResolver(renderer.getOutputDevice(), 15));
+        throws com.itextpdf.text.DocumentException, IOException {
+        ITextRenderer renderer = new ITextRenderer();
+        SharedContext sharedContext = renderer.getSharedContext();
+        sharedContext.setMedia("pdf");
+        sharedContext.setUserAgentCallback(
+            new UriResolver(renderer.getOutputDevice(), sharedContext));
 
-            ITextFontResolver fontResolver = renderer.getFontResolver();
-            fontResolver.addFont(
-                arialUnicodeMSFontPath.toAbsolutePath().toString(),
-                BaseFont.IDENTITY_H,
-                BaseFont.NOT_EMBEDDED);
+        ITextFontResolver fontResolver = renderer.getFontResolver();
+        fontResolver.addFont(
+            arialUnicodeMSFontPath.toAbsolutePath().toString(),
+            BaseFont.IDENTITY_H,
+            BaseFont.NOT_EMBEDDED);
 
-            renderer.setDocumentFromString(htmlContent);
-            renderer.layout();
-            renderer.createPDF(outputStream);
-        } catch (DocumentException e) {
-            throw new IllegalStateException("Error while converting HTML to PDF", e);
-        }
+        renderer.setDocumentFromString(htmlContent);
+        renderer.layout();
+        renderer.createPDF(outputStream);
     }
 
     public String renderAsString(Map<String, Object> context, String templatePath, Locale locale) {

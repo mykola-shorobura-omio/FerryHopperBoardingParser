@@ -6,14 +6,16 @@ import java.io.InputStream;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.UrlResource;
+import org.xhtmlrenderer.layout.SharedContext;
 import org.xhtmlrenderer.pdf.ITextOutputDevice;
 import org.xhtmlrenderer.pdf.ITextUserAgent;
 
 @Slf4j
 class UriResolver extends ITextUserAgent {
 
-  UriResolver(ITextOutputDevice outputDevice, int dotsPerPixel) {
-    super(outputDevice, dotsPerPixel);
+  UriResolver(ITextOutputDevice outputDevice, SharedContext sharedContext) {
+    super(outputDevice);
+    setSharedContext(sharedContext);
   }
 
   @Override

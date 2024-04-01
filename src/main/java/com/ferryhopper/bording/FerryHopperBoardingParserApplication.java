@@ -1,6 +1,7 @@
 package com.ferryhopper.bording;
 
 import com.ferryhopper.bording.converter.ConverterFromBPC;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,8 +19,7 @@ public class FerryHopperBoardingParserApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        converterFromBPC.run();
-//        String template = parseThymeleafTemplate();
-//        generatePdfFromHtml(template);
+        List.of("web_checkin", "paper_coupon_kiosk", "boarding_pass_kiosk")
+                .forEach(converterFromBPC::run);
     }
 }

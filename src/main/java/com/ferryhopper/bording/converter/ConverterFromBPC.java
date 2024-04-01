@@ -5,24 +5,20 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
 import lombok.Cleanup;
 import lombok.SneakyThrows;
-import org.apache.commons.io.IOUtils;
 import org.rythmengine.RythmEngine;
 import org.rythmengine.resource.ClasspathResourceLoader;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Component;
 import org.xhtmlrenderer.layout.SharedContext;
 import org.xhtmlrenderer.pdf.ITextFontResolver;
@@ -39,14 +35,14 @@ import static org.rythmengine.conf.RythmConfigurationKey.RESOURCE_LOADER_IMPLS;
 public class ConverterFromBPC {
 
     private static final String RYTHM_ENGINE_ID = "GENERIC_API_TICKET_ENGINE";
-    private static final Resource ARIAL_UNICODE_MS_FONT = new ClassPathResource("/template/ArialUnicodeMS.ttf");
-    private static final String BOARDING_PASS_KIOSK_TEMPLATE = "boarding_pass_kiosk";
+    private static final Resource ARIAL_UNICODE_MS_FONT = new ClassPathResource("/templates/fonts/ArialUnicodeMS.ttf");
 
     private Path arialUnicodeMSFontPath;
 
-    public void run() throws IOException {
+    @SneakyThrows
+    public void run(String template) {
         init();
-        String templatePath = resolveResource("template/" + BOARDING_PASS_KIOSK_TEMPLATE + ".rythm", "ticket template");
+        String templatePath = resolveResource("templates/" + template + ".rythm", "ticket template");
         Map<String, Object> context = new HashMap<>();
         context.put("departure", "Naples Beverello");
         context.put("arrival", "Port of Capri");
@@ -54,7 +50,7 @@ public class ConverterFromBPC {
         context.put("departureTime", "12:45");
         context.put("arrivalTime", "16:25");
 
-        File file = generateDocument(context, templatePath, ENGLISH, BOARDING_PASS_KIOSK_TEMPLATE);
+        File file = generateDocument(context, templatePath, ENGLISH, template);
         String resourcesPath = Paths.get("src/main/resources/instructions/").toString();
         // Construct the path where you want to save the file within the resources folder
         File targetFile = new File(resourcesPath + File.separator + file.getName());

@@ -201,13 +201,12 @@
   font-size: 11px;
   letter-spacing: 0;
   line-height: 16px;
-  margin-bottom: 8px;
 }
 
 .boarding-details-PDF .ticket-print-at {
   position: relative;
-  width: 104.44px;
-  height: 104px;
+  width: 104px;
+  float: right;
 }
 
 .boarding-details-PDF .from-city-copy-4 {
@@ -224,15 +223,14 @@
 .boarding-details-PDF .passenger-info {
   padding: 16px 24px;
   position: relative;
-  width: 100%;
+  width: 530px;
   background-color: #F5F9FD;
   border-radius: 8px;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 0;
 }
 
 .boarding-details-PDF .from-city-copy-5 {
   position: relative;
-  margin-top: -1px;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
   color: #132968;
@@ -248,7 +246,7 @@
   margin: 16px 0;
 }
 
-.boarding-details-PDF .from-city-copy-6 {
+.boarding-details-PDF .grey-cap {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -261,7 +259,7 @@
   text-transform: uppercase;
 }
 
-.boarding-details-PDF .from-city-copy-7 {
+.boarding-details-PDF .bold-text {
   position: relative;
   align-self: stretch;
   font-family: "GT Walsheim Pro-Bold", Helvetica;
@@ -277,11 +275,10 @@
 .boarding-details-PDF .route-block {
   padding: 16px 24px;
   position: relative;
-  width: 100%;
+  width: 530px;
   border-radius: 8px;
   border: 1px solid #DCDFE9;
-  margin-bottom: 16px;
-  /* display: table-caption; */
+  margin: 0 16px 16px 0;
 }
 
 /* For .frame-9 */
@@ -324,7 +321,6 @@
   position: relative;
   height: 16px;
   float: right;
-  /* display: table-cell; */
   width: 50px;
 }
 
@@ -343,7 +339,7 @@
   width: 100%;
   height: 1px;
   background-color: #DCDFE9;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 /* For .departure-and */
@@ -554,10 +550,11 @@
 .boarding-details-PDF .footer {
   display: block;
   position: relative;
+  width: 100%;
 }
 
 .boarding-details-PDF .manage-your-booking {
-  width: 511px;
+  width: 530px;
   position: relative;
   margin: 16px 0;
 }
@@ -582,7 +579,7 @@
 
 .boarding-details-PDF .from-city-copy-9 {
   position: relative;
-  width: 511px;
+  width: 100%;
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
   color: transparent;
@@ -593,6 +590,7 @@
 
 .boarding-details-PDF .text-wrapper-12 {
   color: #fa6b6b;
+  font-size: 11px;
 }
 
 .boarding-details-PDF .text-wrapper-13 {
@@ -601,7 +599,7 @@
 
 .boarding-details-PDF .www-omio-com-https {
   position: relative;
-  width: 511px;
+  width: 530px;
   font-family: "GT Walsheim Pro-Regular", Helvetica;
   font-weight: 400;
   color: #132968;
@@ -623,3 +621,25 @@
   font-family: "GT Walsheim Pro-Bold", Helvetica;
   font-weight: 700;
 }
+
+.address-container{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+.address-wrapper{
+  float: left;
+  width: 220px;
+  padding: 0 8px 8px 0;
+  margin: 0 8px 0 0;
+}
+
+
+.margin-bottom {
+  margin-bottom:8px;
+}
+.margin {
+  margin:4px 0;
+}
+

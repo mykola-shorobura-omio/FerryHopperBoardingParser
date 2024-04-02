@@ -10,45 +10,70 @@
 
   </head>
 <body>
-   <div class="boarding-details-PDF">
-        <div class="logo-header">
+ <div class="boarding-details-PDF">
+      <div class="logo-header">
           <div class="logo-wrapper">
-            <div class="logo">
-              <img src="/templates/img/omio-logo.png" />
+            
+            
+              <img class="logo" src="/templates/img/omio-logo.png"/>
     
-            </div>
+          
+          
           </div>
           <div class="text-wrapper">Boarding details</div>
         </div>
                   <div class="ticket-info">
             <div class="frame-3">
-              <div class="frame-4">
-                <div class="frame-5">
-                  <p class="from-city">Collect your ticket(s) before departure</p>
-                  <p class="paragraph margin-bottom">
-                    <span class="span-bold">You must collect a paper ticket at a {companyName} kiosk or desk before you travel.</span> Be sure to bring the ticket collection details listed below and your ID to collect your ticket.
-                  </p>
-                </div>
-              </div>
-              <img class="ticket-print-at" src="/templates/img/ticketPrintAtStation.png" />
+            <div class="frame-4">
+       <div class="frame-5">
+          <p class="from-city">Collect your ticket(s) before departure</p>
+          
+          <p class="paragraph margin-bottom"><span class="span-bold"> You must collect a paper ticket at a {companyName} kiosk or desk before you travel. </span>Be sure to bring the ticket collection details listed below and your ID to collect your ticket.</p>
+       </div>
+    </div>
+              <img class="ticket-print-at" src="/templates/img/ticketPrintAtStation.png"/>
             </div>
+        
           </div>
-          <div class="passenger-info ">
-            <p class="from-city-copy-5">Ticket collection details:</p>
-            <div class="frame-8">
-              <div class="grey-cap">RESERVATION NUMBER</div>
-              <div class="bold-text">xxxxxxxxxxxxxxxxxx</div>
-            </div>
-            <div class="frame-8">
-              <div class="grey-cap">KIOSK OR DESK LOCATIONS</div>
-              <div class="bold-text">Agata Galecka</div>
-            </div>
+      <div class="passenger-info ">
+          <p class="from-city-copy-5">Ticket collection details:
+          </p>
+          
+          
+          <div class="frame-8">
+            <div class="grey-cap">RESERVATION NUMBER</div>
+            <div class="bold-text">xxxxxxxxxxxxxxxxxx</div>
+          </div><div class="address-container">
+  <div class="grey-cap">kiosk or desk locations</div><div class="address-wrapper">
+      <p class="from-city-copy-5 margin">Naples</p>
+   
+  
+            <div class="bold-text">Name of agency or ferry kiosk</div>
+  
+   <div class="paragraph">Port of Naples, 123 Naples Lane, 80133 Naples, Italy</div>
+  
+  <div class="paragraph">+30 26230 92080</div>
+            
+            <p class="text-wrapper-12">View port location on a map</p></div><div class="address-wrapper">
+      <p class="from-city-copy-5 margin">Naples</p>
+   
+  
+            <div class="bold-text">Name of agency or ferry kiosk</div>
+  
+   <div class="paragraph">Port of Naples, 123 Naples Lane, 80133 Naples, Italy</div>
+  
+  <div class="paragraph">+30 26230 92080</div>
+            
+            <p class="text-wrapper-12">View port location on a map</p></div>
+            
           </div>
+        </div>
+          
           <div class="route-block">
             <div class="frame-9">
               <div class="text-wrapper-4 bold">Outbound</div>
               <div class="text-wrapper-4">Fri Mar 22, 2024</div>
-              <div class="SNAV"><img class="bitmap" src="/templates/img/bitmap.png" /></div>
+              <div class="SNAV"><img class="bitmap" src="/templates/img/bitmap.png"/></div>
             </div>
             <div class="divider-solid"></div>
             <div class="departure-and">
@@ -62,9 +87,9 @@
                     <div class="text-wrapper-5">16:25</div>
                   </div>
                   <div class="frame-10">
-                    <img class="img-2" src="/templates/img/ferry-1.png" />
+                    <img class="img-2" src="/templates/img/ferry-1.png"/>
                     <div class="rectangle"></div>
-                    <img class="img-2" src="/templates/img/pin.png" />
+                    <img class="img-2" src="/templates/img/pin.png"/>
                   </div>
                   <div class="time-of-travel">
                     

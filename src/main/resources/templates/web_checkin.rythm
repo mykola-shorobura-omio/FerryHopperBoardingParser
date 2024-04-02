@@ -7,54 +7,43 @@
     </style>
   </head>
   <body>
-     <div class="boarding-details-PDF">
+    <div class="boarding-details-PDF">
+
       <div class="logo-header">
         <div class="logo-wrapper">
-          <div class="logo">
-            <img src="/templates/img/omio-logo.png" />
-          </div>
+          <img class="logo" src="/templates/img/omio-logo.png"/>
         </div>
+           
         <div class="text-wrapper">Boarding details</div>
       </div>
+              
         <div class="ticket-info">
-          <div class="frame-3">
+        <div class="frame-3">
             <div class="frame-4">
               <div class="frame-5">
-                <p class="from-city">Check in to get your e-ticket(s)</p>
+                  <p class="from-city">Collect your ticket(s) before departure</p>
                   <p class="paragraph margin-bottom">
                     V1: We can provide check-in time
-                    </p><p class="paragraph margin-bottom">You’ll need to check in with {companyName} to receive your e-ticket before you travel. Check-in opens<span class="span-bold"> {time} {periodUnit, select, M {{time, plural, =1{minute} other{minutes}}} H {{time, plural, =1{hour} other{hours}}} D {{time, plural, =1{day} other{days}}} other{}}</span> before departure. Use the codes listed below to complete the check-in process.
                   </p>
-              </div>
-              <div class="frame-5">
-                <p class="paragraph margin-bottom">
-                  <span class="span">Visit the {companyName} website to check in</span>
-                  <span class="text-wrapper-2"> to receive a check-in confirmation document.</span>
-                </p>
-                  <p class="paragraph span">
-                   For any technical issues during the check-in process, <span class="span">contact {companyName} customer support</span>.
-                </p>
-                <p>
-                  ---
-                </p>
-                <p class="paragraph margin-bottom">
-                  V2: We cannot provide check-in time
-                </p>
-                <p class="paragraph">
-                  You must check in with {companyName} to receive your e-ticket in order to travel. Use the information listed below to complete the check-in process.
-                </p>
-                <p class="paragraph margin-bottom">
-                  <span class="span">Visit the {companyName} website to check in</span>
-                  <span class="text-wrapper-2"> to receive a check-in confirmation document.</span>
-                </p>
-                  <p class="paragraph">
-                   For any technical issues during the check-in process, <span class="span">contact {companyName} customer support</span>.
-                </p>
+                  <p class="paragraph margin-bottom">You’ll need to check in with {companyName} to receive your e-ticket before you travel. Check-in opens<span class="span-bold"> {time} {periodUnit, select, M {{time, plural, =1{minute} other{minutes}}} H {{time, plural, =1{hour} other{hours}}} D {{time, plural, =1{day} other{days}}} other{}} </span>before departure. Use the codes listed below to complete the check-in process.</p>
               </div>
             </div>
-            <img class="ticket-print-at" src="/templates/img/web.png" />
-          </div>
+            <img class="web-check" src="/templates/img/web.png"/>
         </div>
+        <div class="frame-6">
+            <p class="paragraph margin-bottom">
+              <span class="span">Visit the {companyName} website to check in </span>
+              <span class="text-wrapper-2">&lt;&lt;this text should be hyperlinked to the company website&gt;&gt;</span>
+            </p>
+            <p class="paragraph margin-bottom">For any technical issues during the check-in process, contact {companyName} customer support.</p>
+        </div>
+        </div>
+
+
+
+
+
+
         <div class="passenger-info ">
           <p class="from-city-copy-5">{companyName} check-in details:</p>
           <div class="frame-8">
@@ -70,7 +59,7 @@
           <div class="frame-9">
             <div class="text-wrapper-4 bold">Outbound</div>
             <div class="text-wrapper-4">Fri Mar 22, 2024</div>
-            <div class="SNAV"><img class="bitmap" src="/templates/img/bitmap.png" /></div>
+            <div class="SNAV"><img class="bitmap" src="/templates/img/bitmap.png"/></div>
           </div>
           <div class="divider-solid"></div>
           <div class="departure-and">
@@ -83,7 +72,7 @@
               <div class="frame-10">
                 <img class="img-2" src="/templates/img/ferry-1.png" />
                 <div class="rectangle"></div>
-                <img class="img-2" src="/templates/img/pin.png" />
+                <img class="img-2" src="/templates/img/pin.png"/>
               </div>
               <div class="time-of-travel">
                   <div class="text-wrapper-5">Naples Beverello</div>

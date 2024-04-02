@@ -11,12 +11,9 @@
   </head>
 <body>
 <div class="boarding-details-PDF">
-        <div class="logo-header">
-          <div class="logo-wrapper">
-            <div class="logo">
-              <img src="/templates/img/omio-logo.png" />
-    
-            </div>
+      <div class="logo-header">
+          <div class="logo-wrapper">    
+              <img class="logo" src="/templates/img/omio-logo.png"/>
           </div>
           <div class="text-wrapper">Boarding details</div>
         </div>

@@ -22,7 +22,6 @@
   position: relative;
   float: left;
   width: 50%;
-  margin-left: -8px;
 }
 
 .boarding-details-PDF .logo {
@@ -442,8 +441,8 @@
 
 .boarding-details-PDF .img-2 {
   position: relative;
-  /* width: 16px; */
-  /* height: 16px; */
+  width: 16px;
+  height: 16px;
   margin-left: -6px;
   margin-right: -6px;
   margin-top: 3px;
@@ -643,3 +642,7 @@
   margin:4px 0;
 }
 
+img.web-check {
+  width: 104px;
+  float: right;
+}
